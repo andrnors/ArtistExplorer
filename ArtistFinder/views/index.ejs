@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArtistExplorer</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async
+            custom-element="amp-twitter"
+            src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js">
+    </script>
+
+</head>
+<body>
+
+<button href="#" class="btn btn-info" id="welcome" title="Instructions" data-toggle="popover" data-trigger="hover"
+        data-content="Welcome to ArtistExplorer!
+All you need to do is choose your prefered language, click the green button and name a song. If you are pleased with the result, click the blue button to start the search.
+This will give you the Artist of the song, list Top 10 tracks on Spotify for that particular artist, and display the latest 10 tweets from that Artist.
+Try it! ">Info
+</button>
+
+<div id="head">
+    <h1>ArtistExplorer</h1>
+
+    <form id="searchForm" action="/search">
+        <input type="text" id="q" name="q" size=60 autocomplete="off" class="form-control" <%- placeholder %>>
+        <br>
+        <p id="artistLine"> Artist: <%= artistName %> </p><br>
+        <input id="startButton" type="button" class="btn btn-success" value="Click to Speak">
+        <input id="search-button" type="submit" class="btn btn-primary" value="Search">
+    </form>
+    <div class="form-group"  id="languages">
+        <select class="form-control" name="languages" id="selectLanguage">
+            <option value="en-AU">English</option>
+            <option value="nb-NO">Norwegian</option>
+        </select>
+    </div>
+</div>
+
+<div class="container" id="container">
+    <div class="row">
+
+        <div id="tracks" class="col-md-6" >
+            <h3 id = spotifyHead>
+                <a <%- spotifyLink %> target="_blank">Top tracks on spotify for <%= artistName %> </a>
+                <iframe id="spotifybutton" src="https://embed.spotify.com/follow/1/?uri=spotify:artist:<%-artistID%>&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+            </h3>
+            <ul id="trackList" class="list-group">
+                <% for (var i = 0; i < topTracks.length; i++){ %>
+                <a href="#" onclick="return popupWindow('<%-topTracks[i][1]%>', 650,800)">
+                <li href="#" class="list-group-item">
+                    <%=topTracks[i][0]%>
+                </li></a>
+                <% } %>
+            </ul>
+        </div>
+
+        <div id="tweets" class="col-md-6" >
+
+            <h3><a <%- twitterLink %> target="_blank">Twitter feed for <%= artistName %></a>
+
+                <a id="twitterbutton" href="https://twitter.com/<%= tAccount %>" class="twitter-follow-button"
+                   data-show-count="false">Follow @<%= tAccount %></a>
+            </h3>
+
+            <ul id="tweetList" class="list-group">
+                <% for (var i = 0; i < tweets.length; i++){ %>
+                <!--<a id = "l" class="list-group-item" href="#" onclick="return popupWindow('https://twitter.com/<%= tAccount %>/status/<%= tweets[i][1] %> ', 650,800)"> <%- tweets[i][0] %></a> -->
+
+                <amp-twitter width=486 height=657
+                             layout="responsive"
+                             data-tweetid="<%= tweets[i][1] %>"
+                             data-cards="hidden">
+                    <blockquote id ="blockq" placeholder class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr" id="p">
+                            <a id="l" class="list-group-item"
+                               href="https://twitter.com/<%= tAccount %>/status/<%= tweets[i][1] %>"><%= tweets[i][0] %></a>
+                        </p>
+                    </blockquote>
+                </amp-twitter>
+                <% } %>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/javascripts/speech.js"></script>
+<script type="text/javascript" src="/javascripts/popover.js"></script>
+<script type="text/javascript" src="/javascripts/popup.js"></script>
+
+</body>
+
+</html>

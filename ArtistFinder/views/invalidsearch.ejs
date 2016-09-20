@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArtistExplorer</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src ="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+<button href="#" class="btn btn-info" id="welcome" title="Instructions" data-toggle="popover" data-trigger="hover"
+        data-content="Welcome to ArtistExplorer!
+All you need to do is choose your prefered language, is click the green button and name a song. If you are pleased with the result, click the blue button to start the search.
+This will give you the Artist of the song, list Top 10 tracks on Spotify for that particular artist, and display the latest 10 tweets from that Artist.
+Try it! ">Info
+</button>
+
+<div id="head">
+    <h1>ArtistExplorer</h1>
+
+    <form id="searchForm" action="/search">
+        <input type="text" id="q" name="q" autocomplete="off" size=60 class="form-control" placeholder="<%=message%>">
+        <input id="startButton" type="button" class="btn btn-success" value="Click to Speak">
+        <input id="search-button" type="submit" class="btn btn-primary" value="Search">
+    </form>
+    <div class="form-group"  id="languages">
+        <select class="form-control" name="languages" id="selectLanguage">
+            <option value="en-AU">English</option>
+            <option value="nb-NO">Norwegian</option>
+        </select>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/javascripts/speech.js"></script>
+<script type="text/javascript" src="/javascripts/popover.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "skilful-bliss-141406",
+  "private_key_id": "b943fa3f031ea020ddb57e32d29df37232138fbc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDuGHcrq8SkiizV\nzVLHCjY7IcKieHh7uDFg/M3yXrCBRsUQq6xZdVzKXhwLLHL5A1oC4amjkkvzPJOk\n5D29ZgSw5o8Emt/lJwT0SwyS+hNoTLtIeGHBXdlkjqKH0xdTcdpGH3UPOmdvqbSk\nZW50aDKWjOx7O7z2BNSrr+AZuwZLFLyl6BAaSJbHxL9ttMyL40l4B2l8zeNNEncV\nnWVPOz2FYIQVpKbEa496T0oXV3aPFC0ZrNm4cyoDHX2gF/DeFcPp0tMHkCysbe47\nHRAMonmp/W9I1RRnraowI7pIT78kTA1eUKNs/8VJrl0w0DqHhaeURvzA8KtsMDrs\nOx00aZtrAgMBAAECggEAMiSA5HeWQDjBXH2TU0u5RBbGEMViSlvuOkjDbqm2bmNj\nGTGuaGCpHA1Zxpij1gF4sWao/UPQLvew+GcBAaQ8lKzZrdSYFoBzMKeljEaSU8Ll\nJkwD+l8za1QGsqgoH3C40U/KrVxVcFTDMGQUMPvIu6AOJZ3dG8rEpyuw/HpAxwq8\n+jGIH3jv1QKkQWMIS7gkOH91rJjbvy82sdvfqdBy9bgowwjzpqLoZ8Ifhtw3R8Pl\nHMDMEGhFdlHOFPuyPIK6oIADUv+dQReFoyDURxVskRvDYWUeaV7E/OGd8NFTUEkj\nmTxiQWcYrW/n7o3/avgbVqVYTeWnaJG8fiaTW5Xu8QKBgQD4nVjo6aAgLGgymJE+\nmelaUMlG2jGHU0K9rDnmNomaGTSjsqiw5JptQ4tdBKt+iMAq1EYq77w1dMX5rN2y\n2YQt+NYOJ6zKWoYiqGsmgBa4idjxVL8eHrb/aW3iCqyEB1bbjyuMF2EKfj0IonIs\n6BMxlpGcyMs6Ny4jkr85nwDCXwKBgQD1Kx+P7kYF8nROI8I4Y0J1R+SoCBiDcfwh\naL9a7v7upnc1r3tMbVP9QP56GA4yVxCDzG63qi2qR1qDRIvUvEAjg6dEDuicI75Y\nai1qiJ6ID9nregfLgRFoHvzeUQPwHLCRqJC3XvFz0ex2wApT8GZJpbQ1EC9vFqRw\n5szXfMD6dQKBgEAF3TiVuVuvs+GbsoOphRNyDHNHi0urIFvR91MWplbduNWTE6gC\nJtaOd1wr8LH0K3CcG7nA5PnrKXSDlNAS/dwM4arhgrjVmQdh0b4nbDJ3pTt4tILg\nLAYYM2jrkMOrVC3Ub8Vy29Wk7rjDhJ2V4iN5/+OdPeCvBx24E7CWBs8HAoGAAeKr\nA3hZoYIT0uYDgFuDD1PWNlSZm6ksvzUHA7QC0eMF16vZzuSoWLI/QsEcmtaAkgLo\ndxEf+MdDsu68BI7OD3fbuXJD569+rz9hygfy8CjvDBiMJsx/TcWvPCZzWU1fLj+V\nnVNll/ZtUxx2995JaxeTIzVUqA4MhbHAsYeMFGECgYAaJSd6MTd5gO9JIbGOndYu\n2GBZ379S9Kstn7KbwG/R7hmumnlVLnkNLg9eTk3wXtF+D2I1RESxaAB2uNsh4ZHF\n03YuketEDjKUqufUD0qfOmnFbAkEJoHG9fla11R58YsSe6TWxLzPw2+H1TorVT1k\nbWmfM8YxYIaooU9js50kYQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech@skilful-bliss-141406.iam.gserviceaccount.com",
+  "client_id": "111763768054991851600",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech%40skilful-bliss-141406.iam.gserviceaccount.com"
+}

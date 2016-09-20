@@ -1,0 +1,184 @@
+*{
+  width: 100%;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#head {
+  text-align: center;
+  padding: 1em;
+  margin-top: -5em;
+  display: inline;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+}
+
+#q {
+  border: none transparent;
+  box-shadow: none;
+  background: transparent;
+  margin: auto;
+  text-align: center;
+  color: #00B7FF;
+  font-size: 1.5em;
+}
+
+#q:hover{
+  cursor: default;
+}
+
+#artistLine{
+  text-align: center;
+  color: #00B7FF;
+  font-size: 1.5em;
+}
+
+#search-button{
+  margin: auto;
+  width: 15em;
+  margin-top: 1em;
+
+}
+
+#startButton{
+  margin: auto;
+  margin-top: 1em;
+  width: 15em;
+}
+
+#selectLanguage{
+  max-width: 10em;
+  margin: auto;
+  margin-top:1em;
+}
+
+
+#welcome {
+  text-align: center;
+  color: black;
+  width: 10em;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+
+#tracks {
+    text-align: center;
+}
+
+#tweets {
+    text-align: center;
+}
+
+#tweetList {
+  max-height: 45em;
+  max-width: 41em;
+  overflow-y: auto;
+
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#l{
+    text-align: center;
+    color: #00B7FF;
+    line-height: 2em;
+}
+
+
+#trackList{
+  max-height: 45em;
+  min-width: 45em;
+
+  overflow-y: auto;
+
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background-color: #d4d8d4;
+
+}
+
+#trackList>a>li{
+  background-color: #262626;
+  font-size: 1.2em;
+  height: 3.5em;
+  color: #81b71a;
+}
+
+#trackList>a:visited{
+    background-color: #262626;
+    font-size: 1.1em;
+    height: 3.8em;
+    color: #81b71a;
+}
+
+
+#tweetList>a:hover{
+  background-color: #d4d8d4;
+  padding: 2%;
+
+}
+
+#tweetList>a:visited{
+  background-color: #d2d2d2;
+}
+
+#trackList>a>li:hover{
+  background-color: #2f2f2f;
+  font-size: 1.4em;
+  text-decoration-color: #81b71a;;
+
+}
+
+#spotifyHead a{
+  color: #6AE368;
+}
+
+
+#spotifybutton{
+    overflow:hidden;
+    border:none;
+    max-width: 5em;
+    margin-left: 1em;
+
+}
+
+#sl li{
+  display: inline-block;
+  list-style: none;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    margin-top: -2em;
+}
